@@ -45,7 +45,7 @@ var MAC={
     'Fav': function(u,s){
         try{ window.external.addFavorite(u, s);}
         catch (e){
-            try{window.sidebar.addPanel(s, u, "");}catch (e){ MAC.Pop.Msg(150,40,'加入收藏出错，请使用键盘Ctrl+D进行添加',1000); }
+            try{window.sidebar.addPanel(s, u, "");}catch (e){ MAC.Pop.Msg(150,40,'加入收藏出错，请使用键盘Ctrl+D进行添加',10000); }
         }
     },
     'Open': function(u,w,h){
